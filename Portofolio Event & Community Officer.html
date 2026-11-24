@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Faizal Oktawinata – Portofolio Event &amp; Community Officer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --board:#17332d; --board-ink:#eef3ef; --chalk:#f2c94c;
+  --bg:#f7f8f5; --surface:#ffffff; --ink:#1d2a27; --muted:#55645f; --line:#d9e1dc; --link:#17543f;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --board:#0f211d; --bg:#121a18; --surface:#1a2522; --ink:#e8eeea; --muted:#a3b2ac; --line:#2c3a36; --link:#8fd3b6;
+  }
+}
+:root[data-theme="dark"]{--board:#0f211d; --bg:#121a18; --surface:#1a2522; --ink:#e8eeea; --muted:#a3b2ac; --line:#2c3a36; --link:#8fd3b6;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.7 var(--sans)}
+a{color:var(--link)}
+:focus-visible{outline:3px solid var(--chalk);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+header.hero{background:var(--board);color:var(--board-ink);
+  background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 2.1rem,rgba(255,255,255,.07) 2.1rem,rgba(255,255,255,.07) calc(2.1rem + 1px));
+  padding:1.25rem 0 4.5rem}
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem;font-size:.95rem;padding-bottom:3.5rem}
+nav a{color:var(--board-ink);text-decoration:none;padding:.35rem 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--chalk)}
+.hero h1{font:700 clamp(2.6rem,8vw,5.2rem)/1.02 var(--serif);margin:0 0 1.25rem;letter-spacing:-.02em}
+.hero .role{font:500 clamp(1.15rem,2.6vw,1.5rem)/1.4 var(--serif);color:var(--chalk);margin:0 0 1.25rem;max-width:36rem}
+.hero p.lead{max-width:40rem;margin:0 0 2rem;opacity:.93}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.75rem 1.25rem;border-radius:.4rem;font-weight:600;text-decoration:none}
+.btn.main{background:var(--chalk);color:#1d2a27}
+.btn.alt{border:1.5px solid var(--board-ink);color:var(--board-ink)}
+section{padding:4rem 0;border-bottom:1px solid var(--line)}
+h2{font:700 clamp(1.7rem,4vw,2.3rem)/1.2 var(--serif);margin:0 0 1.25rem;letter-spacing:-.01em}
+h3{font:600 1.2rem/1.3 var(--serif);margin:0 0 .4rem}
+.grid{display:grid;gap:2rem;grid-template-columns:1fr}
+@media(min-width:760px){.two{grid-template-columns:1fr 1fr}}
+.auto{grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1.25rem}
+.prose{max-width:40rem}
+.facts{margin:0;padding:0 0 0 1.25rem;list-style:none;border-left:3px solid var(--chalk)}
+.facts li{padding:.5rem 0}
+.facts b{display:block;font-family:var(--serif);font-size:1.1rem}
+.facts span{color:var(--muted);font-size:.97rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:.5rem;padding:1.25rem}
+.card p{margin:0;color:var(--muted);font-size:.98rem}
+.role-block{border-left:3px solid var(--chalk);padding-left:1.25rem;margin:0 0 2.5rem;max-width:46rem}
+.role-block .meta{color:var(--muted);font-size:.95rem;margin:0 0 .75rem}
+.role-block ul{margin:0;padding-left:1.1rem}
+.role-block li{margin:.35rem 0}
+.job{padding:1.1rem 0;border-top:1px solid var(--line);max-width:46rem}
+.job:last-child{border-bottom:1px solid var(--line)}
+.job p{margin:.2rem 0 0;color:var(--muted);font-size:.98rem}
+.job .meta{font-size:.92rem}
+.list{list-style:none;margin:1.5rem 0 0;padding:0;border-top:1px solid var(--line)}
+.list li{border-bottom:1px solid var(--line)}
+.list a{display:flex;justify-content:space-between;gap:1rem;padding:1rem .25rem;text-decoration:none;color:var(--ink);font-weight:500}
+.list a:hover{background:var(--surface)}
+.list small{color:var(--muted);font-weight:400;text-align:right}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0 0;padding:0;list-style:none}
+.chips li{border:1px solid var(--line);background:var(--surface);border-radius:.4rem;padding:.3rem .75rem;font-size:.95rem}
+footer{background:var(--board);color:var(--board-ink);padding:3rem 0}
+footer a{color:var(--chalk)}
+footer p{margin:.25rem 0}
+.note{opacity:.75;font-size:.92rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <nav aria-label="Navigasi utama">
+      <a href="#tentang">Tentang saya</a>
+      <a href="#organisasi">Organisasi dan acara</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#kerja">Pengalaman kerja</a>
+      <a href="#pendidikan">Pendidikan</a>
+      <a href="#bukti">Bukti kerja</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <h1>Faizal Oktawinata</h1>
+    <p class="role">Melamar posisi Event &amp; Community Officer</p>
+    <p class="lead">Sarjana Pendidikan Pancasila dan Kewarganegaraan Universitas Negeri Semarang (IPK 3,82). Saya memimpin program kerja dan acara kampus yang melibatkan seluruh mahasiswa jurusan, dari konsep kreatif, rundown, dan anggaran sampai koordinasi dengan pihak luar dan evaluasi.</p>
+    <div class="btns">
+      <a class="btn main" href="#organisasi">Lihat pengalaman acara</a>
+      <a class="btn alt" href="#kontak">Hubungi saya</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="tentang">
+  <div class="wrap grid two">
+    <div class="prose">
+      <h2>Tentang saya</h2>
+      <p>Saya aktif dalam organisasi dan kepanitiaan sejak 2022. Tahun 2023 saya menjabat Kepala Departemen Seni dan Olahraga di Himpunan Mahasiswa Jurusan PKn, dan Kepala Departemen Pengembangan Sumber Daya Mahasiswa (PSDM) di Ormag UNNES.</p>
+      <p>Dari sana saya terbiasa mengelola program kerja, mengoordinasikan panitia, penampil, dan penyedia jasa, serta membuat suasana kerja yang komunikatif dan partisipatif.</p>
+      <p>Saya juga pernah mendampingi siswa sekolah dasar lewat Kampus Mengajar Angkatan 7 dan menjalani PPL Terbimbing di SMA Negeri 1 Semarang. Pengalaman itu melatih saya memandu kelompok dan berbicara di depan banyak orang.</p>
+    </div>
+    <ul class="facts">
+      <li><b>Sarjana Pendidikan PPKn, IPK 3,82/4,00</b><span>Universitas Negeri Semarang, 2021 – 2025</span></li>
+      <li><b>Dua kepala departemen pada 2023</b><span>HMJ PKn dan Ormag UNNES</span></li>
+      <li><b>Kampus Mengajar Angkatan 7</b><span>Program MBKM, Februari – Juni 2024</span></li>
+      <li><b>Domisili</b><span>Kota Semarang, Jawa Tengah</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="organisasi">
+  <div class="wrap">
+    <h2>Organisasi dan acara yang saya kelola</h2>
+
+    <div class="role-block">
+      <h3>Kepala Departemen Seni dan Olahraga, HMJ PKn</h3>
+      <p class="meta">Januari – Desember 2023</p>
+      <ul>
+        <li>Memimpin tiga program utama yang melibatkan seluruh mahasiswa PKn: Porcipol (pekan olahraga jurusan), Papijur (pemilihan putra-putri jurusan), dan Excipol (ekspresi seni dan pertunjukan politik).</li>
+        <li>Meningkatkan kualitas Excipol dibanding tahun sebelumnya lewat konsep panggung yang lebih profesional dan penampilan yang lebih variatif dan atraktif.</li>
+        <li>Menyusun konsep kreatif dan teknis semua program, termasuk rundown, koordinasi dengan panitia teknis dan penampil, serta pengelolaan anggaran yang efisien.</li>
+        <li>Meningkatkan antusiasme dan partisipasi mahasiswa lewat promosi yang efektif dan kegiatan yang relevan dan menyenangkan.</li>
+      </ul>
+    </div>
+
+    <div class="role-block">
+      <h3>Kepala Departemen PSDM, Ormag UNNES</h3>
+      <p class="meta">Januari – Desember 2023</p>
+      <ul>
+        <li>Merancang dan memimpin program pengembangan kapasitas anggota: pelatihan soft skill, manajemen organisasi, dan kepemimpinan dasar.</li>
+        <li>Melaksanakan Makrab Daerah (Malam Keakraban) bagi mahasiswa baru untuk mempererat ikatan, mengenalkan budaya daerah, dan memberi pembinaan awal.</li>
+        <li>Menyelenggarakan studi banding dengan organisasi daerah lain di kampus untuk bertukar ide dan meningkatkan tata kelola organisasi.</li>
+        <li>Menciptakan suasana kerja yang kondusif, komunikatif, dan partisipatif.</li>
+      </ul>
+    </div>
+
+    <div class="role-block">
+      <h3>Staf Departemen Pengembangan Organisasi, HMJ PKn</h3>
+      <p class="meta">Januari – Desember 2022</p>
+      <ul>
+        <li>Koordinator Humas Pepci 2022 (Ospek Jurusan): membangun dan menjaga komunikasi antara panitia dan pihak eksternal.</li>
+        <li>Mengoordinasikan kebutuhan akomodasi, transportasi, dan konsumsi, serta menjalin relasi dengan pemilik tempat, penyedia jasa, dan instansi pendukung.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="keahlian">
+  <div class="wrap">
+    <h2>Keahlian untuk event dan komunitas</h2>
+    <div class="grid auto" style="margin-top:1.5rem">
+      <div class="card"><h3>Perencanaan acara</h3><p>Konsep kreatif, rundown, kebutuhan teknis, dan pengelolaan anggaran dari awal sampai acara selesai.</p></div>
+      <div class="card"><h3>Koordinasi dan vendor</h3><p>Bekerja dengan panitia, penampil, pemilik tempat, dan penyedia jasa, termasuk akomodasi, transportasi, dan konsumsi.</p></div>
+      <div class="card"><h3>Promosi dan partisipasi</h3><p>Mengemas kegiatan agar relevan dan menarik sehingga antusiasme dan keikutsertaan peserta meningkat.</p></div>
+      <div class="card"><h3>Membangun komunitas</h3><p>Menggelar kegiatan keakraban dan pembinaan anggota baru, serta menjaga suasana kerja yang partisipatif.</p></div>
+      <div class="card"><h3>Pelatihan dan fasilitasi</h3><p>Menyelenggarakan pelatihan soft skill dan kepemimpinan, serta memandu sesi di depan kelompok.</p></div>
+      <div class="card"><h3>Humas dan komunikasi</h3><p>Menjaga komunikasi dengan pihak internal dan eksternal secara sopan dan profesional.</p></div>
+    </div>
+    <ul class="chips" aria-label="Alat dan kemampuan">
+      <li>Microsoft Office</li><li>Google Workspace</li><li>Canva</li><li>Manajemen waktu</li><li>Problem solving</li><li>ToPEL (2025)</li>
+    </ul>
+  </div>
+</section>
+
+<section id="kerja">
+  <div class="wrap">
+    <h2>Pengalaman kerja dan magang</h2>
+    <div style="margin-top:1.5rem">
+      <div class="job"><h3>Kampus Mengajar Angkatan 7, Program MBKM</h3><p class="meta">Februari – Juni 2024</p><p>Mendampingi pembelajaran di sekolah dasar sasaran dengan fokus literasi, numerasi, dan pendidikan karakter. Membantu guru merancang media dan metode kreatif, mengurus pendataan dan laporan sekolah, serta mengikuti pembekalan dari Kementerian Pendidikan.</p></div>
+      <div class="job"><h3>Driver ShopeeFood</h3><p class="meta">September 2024 – sekarang</p><p>Mengantar pesanan tepat waktu, berkoordinasi dengan restoran dan pelanggan, dan menjaga rating performa lewat pelayanan yang ramah dan responsif.</p></div>
+      <div class="job"><h3>Waiters, Oriteh Indonesia</h3><p class="meta">Agustus 2024 – Januari 2025</p><p>Melayani pelanggan di stand, menangani permintaan khusus dan keluhan secara profesional, serta menjaga kebersihan dan kerapian area kerja.</p></div>
+      <div class="job"><h3>PPL Terbimbing, SMA Negeri 1 Semarang</h3><p class="meta">Praktik mengajar</p><p>Merencanakan dan memimpin sesi pembelajaran, membuat media dan materi, serta menilai hasilnya dengan bimbingan guru pamong.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pendidikan">
+  <div class="wrap grid two">
+    <div>
+      <h2>Pendidikan</h2>
+      <h3>Pendidikan Pancasila dan Kewarganegaraan</h3>
+      <p class="prose" style="margin:0">Universitas Negeri Semarang, 2021 – 2025. IPK 3,82 dari 4,00.</p>
+    </div>
+    <div>
+      <h2>Sertifikat</h2>
+      <ul style="margin:0;padding-left:1.1rem">
+        <li>Kepala Departemen Seni Olahraga, HMJ PKn (2023)</li>
+        <li>Kepala Departemen PSDM, Ormag UNNES (2023)</li>
+        <li>Staf Departemen Pengembangan Organisasi, HMJ PKn (2022)</li>
+        <li>Kampus Mengajar Angkatan 7, MBKM (2024)</li>
+        <li>Test Proficiency in English Language, ToPEL (2025)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="bukti">
+  <div class="wrap">
+    <h2>Bukti kerja</h2>
+    <p class="prose">Dokumen dan dokumentasi praktik mengajar saya ada di situs portofolio PPL.</p>
+    <ul class="list">
+      <li><a href="https://sites.google.com/view/portofaizaloktawinata/home" target="_blank" rel="noopener">Situs portofolio PPL <small>Profil dan seluruh artefak</small></a></li>
+      <li><a href="https://sites.google.com/view/portofaizaloktawinata/artefak-produk/kegiatan-non-mengajar" target="_blank" rel="noopener">Kegiatan non-mengajar <small>Keterlibatan di luar kelas</small></a></li>
+      <li><a href="https://sites.google.com/view/portofaizaloktawinata/artefak-produk/video-praktik-mengajar" target="_blank" rel="noopener">Video praktik mengajar <small>Fasilitasi di depan kelas</small></a></li>
+      <li><a href="https://sites.google.com/view/portofaizaloktawinata/penilaian-guru-pamong" target="_blank" rel="noopener">Penilaian guru pamong <small>Masukan dari pembimbing</small></a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer id="kontak">
+  <div class="wrap">
+    <h2>Kontak</h2>
+    <p>Saya siap berdiskusi tentang bagaimana pengalaman saya bisa membantu tim Anda mengelola acara dan komunitas.</p>
+    <p>Email: <a href="mailto:faizwinata07@gmail.com">faizwinata07@gmail.com</a></p>
+    <p>Telepon dan WhatsApp: <a href="https://wa.me/6287816187412" target="_blank" rel="noopener">0878-1618-7412</a></p>
+    <p>Domisili: Kota Semarang, Jawa Tengah</p>
+    <p class="note">© Faizal Oktawinata</p>
+  </div>
+</footer>
+
+</body>
+</html>
